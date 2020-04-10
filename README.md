@@ -1,39 +1,54 @@
-# Villegas Octavio
+﻿
+git remote add origin git@github.com:kascotex/clase-01.git
+git push -u origin master
+
 # Tutorial de Git + GitHub
+echo "# clase-01" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:kascotex/clase-01.git
+git push -u origin master
 
---La primera vez:
-1- creo la carpeta contenedora de repositorios
+----------------------------
+primero creo carpeta
 
-2- ingreso a la carpeta por consola 
+ingreso por consola git
 
-3- por consola clono el repositorio
-		git clone https://github.com/octaviovillegas/Cclase03funciones.git
-		git clone miRepo
+git clone   <-- por consola clono repositorio
 
-4- hago los cambios(m,b,a);7
+git clone git@github.com:kascotex/utn-feb20.git
 
-5- agregar cambios
-		git add .
+hago cambios  en el archivo:
+(m,b,a):7
 
-6- comitear cambios
-		git commit -m "mensaje del cambio"
-
-7- subir al repositorio web
-		git push
-
-
-
-# Orden de los comandos
+git add .  <-- agregar cambios
 
 
-a- git clone (unico)
+git commit -m "mensaje descriptivo"   <-- commitear
+no olvidarse de poner -m
+ y poner el mensaje describiendo
+los cambios entre comillas " "
 
-		iteracion:
+git push  <-- subir al repositorio web
+
+*******************************************************
+
+a- git clone 
+(una vez)
 
 b- git add .
-c- git commit -m "mensaje"
 
-		Solo pra subir a la web
+c- git commit -m "mensaje"
+solo subir a la web
 
 d- git push
+
+
+
+
+
+
+
+
 
