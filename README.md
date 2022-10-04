@@ -1,48 +1,41 @@
-﻿
-git remote add origin git@github.com:kascotex/clase-01.git
-git push -u origin master
+•	Create a new repository -> en la cuenta de git (NO Crear README.txt)
+•	Copiar dirección      --> ej: https://github.com/pepito/test_01.git
+•	crear carpeta       ---> ej: test_01
+•	git bash here     ----> dentro de la carpeta creada
 
-# Tutorial de Git + GitHub
-echo "# clase-01" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:kascotex/clase-01.git
-git push -u origin master
+•	Instrucciones: create a new repository on the command line
 
-----------------------------
-primero creo carpeta
+	git init
+	crear un README.txt (que contenga una descripcion)
+	git add . // git add README.txt
+	git commit -m "first commit"
+		//si mensaje Author identity unknown:
+		git config --global user.email "leomcmlxxiv@gmail.com"
+	git branch -M main
+	git remote add origin https://github.com/pepito/test_01.git
+	git push -u origin main
 
-ingreso por consola git
+•	verificar que se creó correctamente (que este el archivo README.txt)
 
-git clone   <-- por consola clono repositorio
+git add .
+git status
+git commit -m "Commit message"
+git push
 
-git clone git@github.com:kascotex/utn-feb20.git
-
-hago cambios  en el archivo:
-(m,b,a):7
-
-git add .  <-- agregar cambios
-
-
-git commit -m "mensaje descriptivo"   <-- commitear
-no olvidarse de poner -m
- y poner el mensaje describiendo
-los cambios entre comillas " "
-
-git push  <-- subir al repositorio web
 
 *******************************************************
+ 		* * * * para forkear * * * *  
+ en al repo ORIGINAL hacer click en fork (ej: https://github.com/pepito/test_01.git)
+ crear una carpeta y dentro de ella hacer:
+ git clone https://github.com/MiRepo.git (se va a crear la carpeta forkeada)
 
-a- git clone 
-(una vez)
+ dentro de la carpeta forkeada hacer:
+ git remote rename origin fork // cambiar "origin" por "fork" para que quede mas claro
+ ir al repo ORIGINAL y copiar la direccion (ej: https://github.com/pepito/test_01.git)
+ git remote add nomID https://github.com/pepito/test_01.git 
+ // nomID = le puedo poner un nombre que lo identifique (ej: pepitoTest)
+•	verificar que se forkeo correctamente (editar el archivo README.txt)
 
-b- git add .
-
-c- git commit -m "mensaje"
-solo subir a la web
-
-d- git push
 
 
 
